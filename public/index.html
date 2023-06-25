@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="col-md-4  border_boxes  p-5 m-2 rounded">
+    <div class="row d-flex justify-content-center align-items-center flex-column gap-5">
+        <!-- Head -->
+        <div class=" mb-5 rounded ">
+            <h3 class="p-2 HEADING">Timer</h3>
+        </div>
+        <!-- Time -->
+        <div class="m-auto rounded">
+            <div class="row p-2">
+                <div class="timer p-5 col text-center">
+                    <p><span id="displayThr">00</span><span>:</span><span
+                            id="displayTmin">00</span><span>:</span><span id="displayTsec">00</span></p>
+                    <p><span>hr</span><span>:</span><span>min</span><span>:</span><span>sec</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class=" mt-5 w-100">
+            <div class="btn-group d-flex gap-2 p-2 justify-content-center align-items-center" role="group"
+                aria-label="Basic example">
+                <button type="button" onclick="onClickTimerStartprompt(); " id="contBtnT"
+                    class="btn buttonX rounded">SetTimer<i class="bi bi-alarm-fill"></i></button>
+                <button type="button" onclick="startT(); " id="startBtnT"
+                    class="btn buttonX rounded">Start<i class="bi bi-play-circle-fill ms-3"></i></button>
+                <button type="button" onclick="pauseT();" id="pauseBtnT" class="btn buttonX rounded">Pause<i
+                        class="bi bi-pause-circle-fill ms-3"></i></button>
+                <button type="button" onclick="resetT();" id="resetBtnT" class="btn buttonX rounded">Reset<i
+                        class="bi bi-stop-circle-fill ms-3"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Timer End -->
+</div>
+</div>
+
+
+
+
+
+    
+
+
+</body>
+
+<!-- BootStrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
